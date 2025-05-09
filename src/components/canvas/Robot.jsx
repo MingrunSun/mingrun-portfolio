@@ -65,7 +65,7 @@ const RobtsCanvas = () => {
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
-      <Suspense fallback={null}>
+      <Suspense fallback={<CanvasLoader />}>
         {" "}
         {/* this is the key, do not load CanvasLoader for now* because 3D will not render*/}
         <OrbitControls
