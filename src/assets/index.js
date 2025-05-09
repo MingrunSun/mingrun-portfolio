@@ -10,6 +10,9 @@ import close from "./close.svg";
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
+import r from "./tech/r.png";
+import stata from "./tech/stata.png";
+import python from "./tech/python.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
@@ -42,6 +45,9 @@ export {
   css,
   docker,
   figma,
+  python,
+  stata,
+  r,
   git,
   html,
   javascript,
