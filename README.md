@@ -30,6 +30,10 @@ npm install -D tailwindcss@3 postcss autoprefixer
 npx tailwindcss init -p
 ```
 
+# Step 3
+
+use emailjs.com for the contact box
+
 # For 3D packages
 
 ```shell
