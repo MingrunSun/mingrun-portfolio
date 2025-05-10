@@ -206,51 +206,53 @@ const testimonials = [
 
 const futures = [
   {
-    title: "1 year plan",
-    company_name: "Department of Finance (Financial Modeling Course",
+    title: "1-Year Plan ",
+    company_name: "Focus: Finishing Strong & Exploring Paths",
     icon: bears,
     iconBg: "#383E56",
-    date: "Jan 2020 – May 2020",
+    date: "2025 -2026",
     points: [
-      "Determined scope and focus of 4 investment projects and led group of 30+ through meetings, collaboration, and assigned tasks, resulting in earning 3 highest group performance rankings",
-      "Designed and implemented 5 well-structured influence diagrams to streamline evaluation and resolution process for client-specific problems.",
-      "Customized 4 stochastic financial forecasting models with Excel and Crystal Ball Monte-Carlo Simulation Software to optimize clients’ decision making.",
+      "Complete dissertation chapters.",
+      "Start applying for postdocs and fellowships.",
+      "Teach if possible to strengthen academic teaching profile.",
+      "Present the work at a conference within the year.",
+      "Prepare academic portfolio.",
     ],
   },
   {
-    title: "2 year plan",
-    company_name: "Department of Finance (Financial Modeling Course",
+    title: "2-Year Plan",
+    company_name: "Focus: Transitioning",
     icon: bears,
     iconBg: "#383E56",
-    date: "Jan 2020 – May 2020",
+    date: "2025-2027",
     points: [
-      "Determined scope and focus of 4 investment projects and led group of 30+ through meetings, collaboration, and assigned tasks, resulting in earning 3 highest group performance rankings",
-      "Designed and implemented 5 well-structured influence diagrams to streamline evaluation and resolution process for client-specific problems.",
-      "Customized 4 stochastic financial forecasting models with Excel and Crystal Ball Monte-Carlo Simulation Software to optimize clients’ decision making.",
+      "Transition into a postdoctoral fellowship, policy research role, or academic teaching position.",
+      "Focus on publishing and building a professional presence in health policy, economics, and technology.",
+      "Continue developing interdisciplinary research interests.",
     ],
   },
   {
-    title: " 3 year plan",
-    company_name: "Department of Finance (Financial Modeling Course",
+    title: " 5-Year Plan",
+    company_name: "Focus: Build Stability & Expertise",
     icon: bears,
     iconBg: "#383E56",
-    date: "Jan 2020 – May 2020",
+    date: "2025 - 2030",
     points: [
-      "Determined scope and focus of 4 investment projects and led group of 30+ through meetings, collaboration, and assigned tasks, resulting in earning 3 highest group performance rankings",
-      "Designed and implemented 5 well-structured influence diagrams to streamline evaluation and resolution process for client-specific problems.",
-      "Customized 4 stochastic financial forecasting models with Excel and Crystal Ball Monte-Carlo Simulation Software to optimize clients’ decision making.",
+      "Secure a stable academic or research-focused position.",
+      "Establish a niche in areas like AI disruption, healthcare finance, or mental health policy",
+      "Begin shaping long-term research goals or external grant proposals.",
     ],
   },
   {
-    title: "5 year plan",
-    company_name: "Department of Finance (Financial Modeling Course",
+    title: "10-Year Plan",
+    company_name: "Focus: Lead & Make Impact",
     icon: bears,
     iconBg: "#383E56",
-    date: "Jan 2020 – May 2020",
+    date: "2025-2030",
     points: [
-      "Determined scope and focus of 4 investment projects and led group of 30+ through meetings, collaboration, and assigned tasks, resulting in earning 3 highest group performance rankings",
-      "Designed and implemented 5 well-structured influence diagrams to streamline evaluation and resolution process for client-specific problems.",
-      "Customized 4 stochastic financial forecasting models with Excel and Crystal Ball Monte-Carlo Simulation Software to optimize clients’ decision making.",
+      "Hold a permanent or tenured academic position in a university or research institute.",
+      "Be recognized as an expert in technology and public health policy intersections",
+      "Contribute to teaching, mentorship, and real-world policy conversations.",
     ],
   },
 ];
@@ -321,4 +323,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, futures, testimonials, projects };

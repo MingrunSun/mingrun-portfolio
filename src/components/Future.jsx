@@ -63,7 +63,7 @@ const Future = () => {
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
           {futures.map((future, index) => (
-            <ExperienceCard key={index} future={future} /> //the {experience} will be passed above in Experience Card
+            <FutureCard key={index} future={future} /> //the {experience} will be passed above in Experience Card
           ))}
         </VerticalTimeline>
       </div>
