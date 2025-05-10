@@ -22,6 +22,7 @@ import {
   starbucks,
   tesla,
   bears,
+  question,
   shopify,
   carrent,
   jobit,
@@ -161,7 +162,7 @@ const experiences = [
     title: "Teaching & Research Assistant",
     company_name: "Department of Finance",
     icon: bears,
-    iconBg: "#E6DEDD",
+    iconBg: "#383E56",
     date: "Jan 2021 – May 2023",
     points: [
       "Instructed 250+ college students in Introduction to Corporate Finance course, covering range of financial concepts such as: time value of money, interpretation of cash flow statement, Straight-line forecasting, MACRS cashflow forecasting, and dividend discount model.",
@@ -173,8 +174,9 @@ const experiences = [
   {
     title: "Independent Empirical Research",
     company_name: "Department of Economics",
-    icon: meta,
-    iconBg: "#E6DEDD",
+    icon: bears,
+    // iconBg: "#E6DEDD",
+    iconBg: "#383E56",
     date: "Aug 2023 - Present",
     points: [
       "Implemented principal component analysis with data virtualization technique to identify the underlying structure of attitudes in internet users who were concerned with cybercrimes.",
@@ -225,8 +227,8 @@ const futures = [
   {
     title: "2-Year Plan",
     company_name: "Focus: Transitioning",
-    icon: bears,
-    iconBg: "#383E56",
+    icon: question,
+    iconBg: "black",
     date: "2025-2027",
     points: [
       "Transition into a postdoctoral fellowship, policy research role, or academic teaching position.",
@@ -237,8 +239,8 @@ const futures = [
   {
     title: " 5-Year Plan",
     company_name: "Focus: Build Stability & Expertise",
-    icon: bears,
-    iconBg: "#383E56",
+    icon: question,
+    iconBg: "black",
     date: "2025 - 2030",
     points: [
       "Secure a stable academic or research-focused position.",
@@ -249,8 +251,8 @@ const futures = [
   {
     title: "10-Year Plan",
     company_name: "Focus: Lead & Make Impact",
-    icon: bears,
-    iconBg: "#383E56",
+    icon: question,
+    iconBg: "black",
     date: "2025-2030",
     points: [
       "Hold a permanent or tenured academic position in a university or research institute.",

@@ -29,6 +29,7 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import bears from "./company/bears.png";
+import question from "./company/question.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -67,6 +68,7 @@ export {
   starbucks,
   tesla,
   bears,
+  question,
   carrent,
   jobit,
   tripguide,
