@@ -3,6 +3,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
+import { fadeIn } from "../utils/motion";
 
 import "react-vertical-timeline-component/style.min.css";
 
@@ -60,6 +61,16 @@ const Future = () => {
         <p className={styles.sectionSubText}>What I plan to do in the future</p>
         <h2 className={styles.sectionHeadText}>Future Plans</h2>
       </motion.div>
+      <div className="w-full flex">
+        <motion.p
+          variants={fadeIn("", "", 0.1, 1)}
+          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        >
+          The following outlines my 1-, 2-, 5-, and 10-year future plans. It
+          highlights my aspirations, growth trajectory, and commitment to making
+          a meaningful impact through research, technology, and policy.
+        </motion.p>
+      </div>
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
           {futures.map((future, index) => (

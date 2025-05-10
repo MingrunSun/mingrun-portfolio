@@ -27,6 +27,9 @@ import {
   jobit,
   tripguide,
   threejs,
+  election,
+  cybercrime,
+  applepay,
 } from "../assets";
 
 export const navLinks = [
@@ -259,66 +262,66 @@ const futures = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Cybercrime Research",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A empirical casual paper studies how faster internet (LTE technology) affects cybercrime victimization using the instrumental variable design.",
     tags: [
       {
-        name: "react",
+        name: "stata",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "overleaf",
         color: "green-text-gradient",
       },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      // {
+      //   name: "R studio",
+      //   color: "pink-text-gradient",
+      // },
     ],
-    image: carrent,
+    image: cybercrime,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "ElectionGPT Shiny App",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "An interactive Shiny App that document innovative methods to predict the outcomes of the 2024 U.S using ChatGPT.",
     tags: [
       {
-        name: "react",
+        name: "python",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "stata",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "R studio",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: election,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "ApplePay Research",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A empirical study examines the impact of collaborating with big tech (Apple Pay) on community banks in the U.S.",
     tags: [
       {
-        name: "nextjs",
+        name: "stata",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "overleaf",
         color: "green-text-gradient",
       },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+      // {
+      //   name: "TexTech",
+      //   color: "pink-text-gradient",
+      // },
     ],
-    image: tripguide,
+    image: applepay,
     source_code_link: "https://github.com/",
   },
 ];
