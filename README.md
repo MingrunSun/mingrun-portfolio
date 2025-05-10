@@ -17,6 +17,8 @@ ES7+ React/Redux/React-Native snippets
 
 Tailwind CSS IntelliSense
 
+https://www.remove.bg/upload (very good place for backgorund remover for logo)
+
 # Step 2
 
 run the following to initiate
