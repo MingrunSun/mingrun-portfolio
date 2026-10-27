@@ -29,3 +29,6 @@ dist-ssr
 
 .vercel
 .env*
+
+# local-only material not meant to be public
+private/

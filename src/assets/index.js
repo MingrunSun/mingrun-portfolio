@@ -36,9 +36,6 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import election from "./election.png";
-import cybercrime from "./cybercrime.png";
-import applepay from "./applepay.png";
-import devenglish from "./devenglish.png";
 
 export {
   logo,
@@ -76,7 +73,4 @@ export {
   jobit,
   tripguide,
   election,
-  cybercrime,
-  applepay,
-  devenglish,
 };

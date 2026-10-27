@@ -32,11 +32,21 @@ const ProjectCard = ({
         className="bg-tertiary p-5 rounded-2xl w-full flex flex-col"
       >
         <div className="relative w-full h-[230px]">
-          <img
-            src={image}
-            alt={name}
-            className="w-full h-full object-cover rounded-2xl"
-          />
+          {image ? (
+            <img
+              src={image}
+              alt={name}
+              className="w-full h-full object-cover rounded-2xl"
+            />
+          ) : (
+            <div className="w-full h-full rounded-2xl green-pink-gradient p-[1px]">
+              <div className="w-full h-full rounded-2xl bg-black-100 flex items-center justify-center">
+                <span className="text-white text-[64px] font-black opacity-20 select-none">
+                  {name.charAt(0)}
+                </span>
+              </div>
+            </div>
+          )}
           {/* GitHub button only shows when the project has a source_code_link */}
           {source_code_link && (
             <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
@@ -96,8 +106,7 @@ const Works = () => {
         >
           A selection of research papers and applied projects. Each one pairs a
           question about education, technology, or policy with administrative
-          data and causal inference methods, and some include links to the code
-          or the working draft.
+          data and causal inference methods, and some include links to the code.
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7">

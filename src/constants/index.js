@@ -30,9 +30,6 @@ import {
   tripguide,
   threejs,
   election,
-  cybercrime,
-  applepay,
-  devenglish,
 } from "../assets";
 
 export const navLinks = [
@@ -294,93 +291,38 @@ const futures = [
   },
 ];
 
+// Minimal-disclosure versions (2026-10-27). Full descriptions, paper titles,
+// abstracts and images are kept locally in private/ (gitignored).
 const projects = [
   {
     name: "Cybercrime Research",
     description:
-      "A empirical casual paper studies how faster internet (LTE technology) affects cybercrime victimization using the instrumental variable design.",
+      "An empirical research project on internet access and online crime, using causal inference methods.",
     tags: [
-      {
-        name: "stata",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "overleaf",
-        color: "green-text-gradient",
-      },
-      // {
-      //   name: "R studio",
-      //   color: "pink-text-gradient",
-      // },
+      { name: "stata", color: "blue-text-gradient" },
+      { name: "causal inference", color: "green-text-gradient" },
     ],
-    image: cybercrime,
-    // source_code_link: "https://github.com/",  // add a link here to show the GitHub button
   },
   {
     name: "ElectionGPT Shiny App",
     description:
       "An interactive Shiny App that document innovative methods to predict the outcomes of the 2024 U.S using ChatGPT.",
     tags: [
-      {
-        name: "python",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "stata",
-        color: "green-text-gradient",
-      },
-      {
-        name: "R studio",
-        color: "pink-text-gradient",
-      },
+      { name: "python", color: "blue-text-gradient" },
+      { name: "stata", color: "green-text-gradient" },
+      { name: "R studio", color: "pink-text-gradient" },
     ],
     image: election,
     source_code_link: "https://github.com/scunning1975/ElectionGPT",
   },
-  // ApplePay Research hidden: coauthor does not want it public. Uncomment to restore.
-  // {
-  //   name: "ApplePay Research",
-  //   description:
-  //     "A empirical study examines the impact of collaborating with big tech (Apple Pay) on community banks in the U.S.",
-  //   tags: [
-  //     {
-  //       name: "stata",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "overleaf",
-  //       color: "green-text-gradient",
-  //     },
-  //     // {
-  //     //   name: "TexTech",
-  //     //   color: "pink-text-gradient",
-  //     // },
-  //   ],
-  //   image: applepay,
-  //   // source_code_link: "https://github.com/",  // add a link here to show the GitHub button
-  // },
   {
-    name: "Developmental English Research",
-    subtitle: "Supporting Persistence, Reshaping Course-Taking",
+    name: "Higher Education Research",
     description:
-      "An empirical study examining how developmental English placement affects student persistence and course-taking behavior at a private four-year university, using a fuzzy regression discontinuity design and administrative student records.",
-    note: "Accepted for presentation at the 2026 North Texas Economics Conference.",
+      "An empirical research project on institutional policies and student outcomes at a four-year university.",
     tags: [
-      {
-        name: "stata",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "overleaf",
-        color: "green-text-gradient",
-      },
-      {
-        name: "regression discontinuity",
-        color: "pink-text-gradient",
-      },
+      { name: "stata", color: "blue-text-gradient" },
+      { name: "regression discontinuity", color: "pink-text-gradient" },
     ],
-    image: devenglish,
-    // source_code_link: "",  // add a link here to show the GitHub button
   },
 ];
 
