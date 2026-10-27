@@ -19,14 +19,17 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div
+      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      className="sm:w-[360px] w-full flex"
+    >
       <Tilt
         options={{
           max: 45,
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        className="bg-tertiary p-5 rounded-2xl w-full flex flex-col"
       >
         <div className="relative w-full h-[230px]">
           <img
@@ -64,7 +67,7 @@ const ProjectCard = ({
             </p>
           )}
         </div>
-        <div>
+        <div className="mt-auto">
           <div className="mt-4 flex flex-wrap gap-2">
             {tags.map((tag) => (
               <p key={tag.name} className={`text-[14px] ${tag.color}`}>
@@ -91,11 +94,10 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories. It reflects my ability to solve complex
-          problems, work with different technologies, and manage projects
-          effectively.
+          A selection of research papers and applied projects. Each one pairs a
+          question about education, technology, or policy with administrative
+          data and causal inference methods, and some include links to the code
+          or the working draft.
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7">

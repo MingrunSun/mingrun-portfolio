@@ -145,7 +145,7 @@ const technologies = [
 const experiences = [
   {
     title: "Financial Analyst",
-    company_name: "Department of Finance (Financial Modeling Course",
+    company_name: "Department of Finance (Financial Modeling Course)",
     icon: bears,
     iconBg: "#383E56",
     date: "Jan 2020 – May 2020",

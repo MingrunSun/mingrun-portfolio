@@ -14,6 +14,7 @@ import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import Globe from "./Globe";
+import Footer from "./Footer";
 
 export {
   Hero,
@@ -26,6 +27,7 @@ export {
   Feedbacks,
   Contact,
   Globe,
+  Footer,
   EarthCanvas,
   BallCanvas,
   ComputersCanvas,

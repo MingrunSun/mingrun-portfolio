@@ -14,6 +14,7 @@ import {
   Tech,
   Works,
   Globe,
+  Footer,
   StarsCanvas,
 } from "./components";
 
@@ -31,6 +32,7 @@ const App = () => {
         <Works />
         <div className="relative z-0">
           <Globe />
+          <Footer />
           <StarsCanvas />
         </div>
       </div>

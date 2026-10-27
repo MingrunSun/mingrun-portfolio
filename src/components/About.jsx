@@ -35,10 +35,10 @@ const ServiceCard = ({ index, title, subtitle, icon }) => (
         />
 
         <div className="flex flex-col items-center gap-1">
-          <h3 className="text-white text-[20px] font-bold text-center">
+          <h3 className="text-white text-[20px] font-bold text-center min-h-[60px] flex items-end justify-center">
             {title}
           </h3>
-          <p className="text-secondary text-[14px] text-center">{subtitle}</p>
+          <p className="text-secondary text-[14px] text-center min-h-[42px]">{subtitle}</p>
         </div>
       </div>
     </motion.div>
