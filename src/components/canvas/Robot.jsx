@@ -22,8 +22,8 @@ const Robots = ({ isMobile }) => {
       />
       <primitive
         object={robot.scene}
-        scale={isMobile ? 0.7 : 1.9}
-        position={isMobile ? [0, -3, -2.2] : [2, -2.3, 0.5]}
+        scale={isMobile ? 0.9 : 1.9}
+        position={isMobile ? [0, -2.3, 0] : [2, -3, -2]}
         rotation={[0, -4, 0.1]}
         //rotation={[-0.01, -0.2, -0.1]}
       />
@@ -36,7 +36,7 @@ const RobtsCanvas = () => {
 
   useEffect(() => {
     // Add a listener for changes to the screen size
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
+    const mediaQuery = window.matchMedia("(max-width: 640px)");
 
     // Set the initial value of the `isMobile` state variable
     setIsMobile(mediaQuery.matches);

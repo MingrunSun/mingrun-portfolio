@@ -20,7 +20,7 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi,I'm <span className="text-[#915eff]">Mingrun</span>{" "}
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          <p className={`${styles.heroSubText} mt-2 text-white-100 max-w-xl`}>
             I’m a Ph.D. candidate exploring <br className="sm:block hidden" />
             how education, technology, and public policy shape opportunities,
             decisions, and human experiences.
