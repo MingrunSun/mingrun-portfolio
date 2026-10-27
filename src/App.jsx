@@ -1,15 +1,19 @@
 import { BrowserRouter } from "react-router-dom";
 
+// HIDDEN SECTIONS (restore any time):
+//   Future plans  -> add `Future,` to the import list below and `<Future />` after <Tech />
+//   Testimonials -> add `Feedbacks,` to the import list below and `<Feedbacks />` after <Works />
+//   Contact form -> add `Contact,` to the import list below and replace `<Globe />` with `<Contact />`
+//                   (Globe is just the rotating Earth; Contact already includes it)
+//                   (also needs EmailJS keys in .env and the "contact" link in src/constants/index.js navLinks)
 import {
   About,
-  Contact,
   Experience,
-  Future,
-  Feedbacks,
   Hero,
   Navbar,
   Tech,
   Works,
+  Globe,
   StarsCanvas,
 } from "./components";
 
@@ -24,11 +28,9 @@ const App = () => {
         <About />
         <Experience />
         <Tech />
-        <Future />
         <Works />
-        <Feedbacks />
         <div className="relative z-0">
-          <Contact />
+          <Globe />
           <StarsCanvas />
         </div>
       </div>

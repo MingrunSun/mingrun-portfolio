@@ -71,3 +71,17 @@ Background image herobg.png is specified in tailwind.config.cjs
 start with mesh when creating 3D and also need light
 
 for 3D (https://r3f.docs.pmnd.rs/getting-started/introduction)
+
+# Hidden sections (how to restore)
+
+Three sections are currently turned off but all their code is kept:
+
+- **Future plans** – `src/components/Future.jsx`, data in `futures` in `src/constants/index.js`.
+  Restore: in `src/App.jsx` add `Future,` to the import and `<Future />` after `<Tech />`.
+- **Testimonials** – `src/components/Feedbacks.jsx`, data in `testimonials` in `src/constants/index.js`.
+  Restore: in `src/App.jsx` add `Feedbacks,` to the import and `<Feedbacks />` after `<Works />`.
+- **Get in touch (contact form)** – `src/components/Contact.jsx`.
+  Restore: in `src/App.jsx` add `Contact,` to the import and replace `<Globe />` with `<Contact />`
+  (`src/components/Globe.jsx` is the Earth-only stand-in; Contact already includes the Earth);
+  uncomment the `contact` entry in `navLinks` in `src/constants/index.js`;
+  fill the three EmailJS keys in `.env` (and in Vercel env settings), then restart the dev server.

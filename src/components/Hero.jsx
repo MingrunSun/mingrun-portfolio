@@ -21,8 +21,9 @@ const Hero = () => {
             Hi,I'm <span className="text-[#915eff]">Mingrun</span>{" "}
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I’m a PhD candidate exploring <br className="sm: block hidden" />
-            how technology, mental health, and public policy intersect.
+            I’m a Ph.D. candidate exploring <br className="sm:block hidden" />
+            how education, technology, and public policy shape opportunities,
+            decisions, and human experiences.
           </p>
         </div>
       </div>

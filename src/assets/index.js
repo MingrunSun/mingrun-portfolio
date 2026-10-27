@@ -30,6 +30,7 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import bears from "./company/bears.png";
 import question from "./company/question.png";
+import empowerhouse from "./company/empowerhouse.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -37,6 +38,7 @@ import tripguide from "./tripguide.png";
 import election from "./election.png";
 import cybercrime from "./cybercrime.png";
 import applepay from "./applepay.png";
+import devenglish from "./devenglish.png";
 
 export {
   logo,
@@ -69,10 +71,12 @@ export {
   tesla,
   bears,
   question,
+  empowerhouse,
   carrent,
   jobit,
   tripguide,
   election,
   cybercrime,
   applepay,
+  devenglish,
 };

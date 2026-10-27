@@ -23,6 +23,7 @@ import {
   tesla,
   bears,
   question,
+  empowerhouse,
   shopify,
   carrent,
   jobit,
@@ -31,6 +32,7 @@ import {
   election,
   cybercrime,
   applepay,
+  devenglish,
 } from "../assets";
 
 export const navLinks = [
@@ -42,27 +44,33 @@ export const navLinks = [
     id: "work",
     title: "Work",
   },
-  {
-    id: "contact",
-    title: "Contact",
-  },
+  // Contact section hidden for now. Uncomment to restore the nav link
+  // (and re-add <Contact /> in src/App.jsx).
+  // {
+  //   id: "contact",
+  //   title: "Contact",
+  // },
 ];
 
 const services = [
   {
     title: "Researcher",
+    subtitle: "Higher Education & Policy",
     icon: web,
   },
   {
-    title: "Economist",
-    icon: mobile,
-  },
-  {
-    title: "Financial Analyst",
+    title: "Applied Economist",
+    subtitle: "Causal Inference & Evaluation",
     icon: backend,
   },
   {
+    title: "AI & Data Explorer",
+    subtitle: "Technology & Human Judgment",
+    icon: mobile,
+  },
+  {
     title: "Creative Writer",
+    subtitle: "Stories & Imagination",
     icon: creator,
   },
 ];
@@ -172,7 +180,7 @@ const experiences = [
     ],
   },
   {
-    title: "Independent Empirical Research",
+    title: "Independent Empirical Researcher",
     company_name: "Department of Economics",
     icon: bears,
     // iconBg: "#E6DEDD",
@@ -181,6 +189,30 @@ const experiences = [
     points: [
       "Implemented principal component analysis with data virtualization technique to identify the underlying structure of attitudes in internet users who were concerned with cybercrimes.",
       "Built 10+ two-stage least square regression models to address endogeneity, establishing positive causal relationships between individual cybercrime victimization and Internet usage.",
+    ],
+  },
+  {
+    title: "Research Assistant",
+    company_name: "Baylor University",
+    icon: bears,
+    iconBg: "#383E56",
+    date: "Sep 2024 – Dec 2025",
+    points: [
+      "Designed and built a React-based conversational chatbot for a faculty research project, enabling structured data collection through natural dialogue with participants.",
+      "Implemented cloud storage and upload pipelines so that conversation logs were securely captured and organized for downstream analysis.",
+      "Iterated on the interface and conversation flow with the research team to improve participant engagement and data quality.",
+    ],
+  },
+  {
+    title: "Data Scientist",
+    company_name: "Empowerhouse",
+    icon: empowerhouse,
+    iconBg: "#C2007A",
+    date: "Jun 2025 – Mar 2026",
+    points: [
+      "Built interactive dashboards to track enrollment, engagement, and program outcomes, giving leadership and program staff a real-time view of key metrics.",
+      "Developed an enrollment forecasting model to project future participation and support planning, budgeting, and resource allocation decisions.",
+      "Applied machine learning techniques to analyze participant and program data, surfacing patterns and insights that informed program design and outreach strategy.",
     ],
   },
 ];
@@ -282,7 +314,7 @@ const projects = [
       // },
     ],
     image: cybercrime,
-    source_code_link: "https://github.com/",
+    // source_code_link: "https://github.com/",  // add a link here to show the GitHub button
   },
   {
     name: "ElectionGPT Shiny App",
@@ -303,12 +335,36 @@ const projects = [
       },
     ],
     image: election,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/scunning1975/ElectionGPT",
   },
+  // ApplePay Research hidden: coauthor does not want it public. Uncomment to restore.
+  // {
+  //   name: "ApplePay Research",
+  //   description:
+  //     "A empirical study examines the impact of collaborating with big tech (Apple Pay) on community banks in the U.S.",
+  //   tags: [
+  //     {
+  //       name: "stata",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "overleaf",
+  //       color: "green-text-gradient",
+  //     },
+  //     // {
+  //     //   name: "TexTech",
+  //     //   color: "pink-text-gradient",
+  //     // },
+  //   ],
+  //   image: applepay,
+  //   // source_code_link: "https://github.com/",  // add a link here to show the GitHub button
+  // },
   {
-    name: "ApplePay Research",
+    name: "Developmental English Research",
+    subtitle: "Supporting Persistence, Reshaping Course-Taking",
     description:
-      "A empirical study examines the impact of collaborating with big tech (Apple Pay) on community banks in the U.S.",
+      "An empirical study examining how developmental English placement affects student persistence and course-taking behavior at a private four-year university, using a fuzzy regression discontinuity design and administrative student records.",
+    note: "Accepted for presentation at the 2026 North Texas Economics Conference.",
     tags: [
       {
         name: "stata",
@@ -318,13 +374,13 @@ const projects = [
         name: "overleaf",
         color: "green-text-gradient",
       },
-      // {
-      //   name: "TexTech",
-      //   color: "pink-text-gradient",
-      // },
+      {
+        name: "regression discontinuity",
+        color: "pink-text-gradient",
+      },
     ],
-    image: applepay,
-    source_code_link: "https://github.com/",
+    image: devenglish,
+    // source_code_link: "",  // add a link here to show the GitHub button
   },
 ];
 

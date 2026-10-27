@@ -11,7 +11,9 @@ import { fadeIn, textVariant } from "../utils/motion";
 const ProjectCard = ({
   index,
   name,
+  subtitle,
   description,
+  note,
   tags,
   image,
   source_code_link,
@@ -32,23 +34,35 @@ const ProjectCard = ({
             alt={name}
             className="w-full h-full object-cover rounded-2xl"
           />
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            {/* above line is to make something on the top of box */}
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src={github}
-                alt="github"
-                className="w-1/2 h-1/2 object-contain"
-              />
+          {/* GitHub button only shows when the project has a source_code_link */}
+          {source_code_link && (
+            <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+              <div
+                onClick={() => window.open(source_code_link, "_blank")}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <img
+                  src={github}
+                  alt="github"
+                  className="w-1/2 h-1/2 object-contain"
+                />
+              </div>
             </div>
-          </div>
+          )}
         </div>
         <div className="mt-5">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p classNmae="mt-2 text-secondary text-[14px]">{description}</p>
+          {subtitle && (
+            <p className="mt-1 text-white-100 text-[15px] font-medium italic">
+              {subtitle}
+            </p>
+          )}
+          <p className="mt-2 text-secondary text-[14px]">{description}</p>
+          {note && (
+            <p className="mt-3 text-[#915EFF] text-[13px] font-semibold">
+              {note}
+            </p>
+          )}
         </div>
         <div>
           <div className="mt-4 flex flex-wrap gap-2">

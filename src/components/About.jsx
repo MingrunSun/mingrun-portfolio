@@ -8,7 +8,13 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 
-const ServiceCard = ({ index, title, icon }) => (
+const overview = [
+  "I’m a Ph.D. candidate in Health Services Research at Baylor University, with a background in applied economics and quantitative research.",
+  "My research focuses on how institutional policies and educational pathways shape student outcomes, using administrative data and causal inference methods. I am also interested in the responsible use of artificial intelligence, particularly how AI can support human reasoning, interpretation, and decision-making without replacing human judgment.",
+  "Across my work, I seek to connect rigorous empirical research with practical applications, bringing together economics, technology, and public policy.",
+];
+
+const ServiceCard = ({ index, title, subtitle, icon }) => (
   <Tilt className="xs:w-[250px] w-full">
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
@@ -24,13 +30,16 @@ const ServiceCard = ({ index, title, icon }) => (
       >
         <img
           src={icon}
-          alt="web-development"
+          alt={title}
           className="w-16 h-16 object-contain"
         />
 
-        <h3 className="text-white text-[20px] font-bold text-center">
-          {title}
-        </h3>
+        <div className="flex flex-col items-center gap-1">
+          <h3 className="text-white text-[20px] font-bold text-center">
+            {title}
+          </h3>
+          <p className="text-secondary text-[14px] text-center">{subtitle}</p>
+        </div>
       </div>
     </motion.div>
   </Tilt>
@@ -42,16 +51,15 @@ const About = () => {
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
-      >
-        I’m a PhD candidate in Health Services Research, exploring how
-        technology, mental health, and public policy intersect to shape
-        real-world outcomes. My work bridges health economics, AI disruption,
-        and healthcare equity, with a focus on interdisciplinary research that
-        informs both scholarship and practice truth.
-      </motion.p>
+      {overview.map((paragraph, index) => (
+        <motion.p
+          key={`overview-${index}`}
+          variants={fadeIn("", "", 0.1 + index * 0.1, 1)}
+          className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        >
+          {paragraph}
+        </motion.p>
+      ))}
 
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
