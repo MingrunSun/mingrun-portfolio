@@ -1,5 +1,7 @@
 import { github } from "../assets";
 
+const SHOW_GITHUB = false;
+
 const emails = ["mingrunsun@gmail.com", "mingrun_sun2@baylor.edu"];
 
 const Footer = () => {
@@ -19,15 +21,18 @@ const Footer = () => {
           </a>
         ))}
       </div>
-      <a
-        href="https://github.com/MingrunSun"
-        target="_blank"
-        rel="noreferrer"
-        aria-label="GitHub"
-        className="black-gradient w-10 h-10 rounded-full flex justify-center items-center hover:scale-110 transition-transform"
-      >
-        <img src={github} alt="GitHub" className="w-1/2 h-1/2 object-contain" />
-      </a>
+      {/* GitHub link hidden for now. Set SHOW_GITHUB to true to show it. */}
+      {SHOW_GITHUB && (
+        <a
+          href="https://github.com/MingrunSun"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="GitHub"
+          className="black-gradient w-10 h-10 rounded-full flex justify-center items-center hover:scale-110 transition-transform"
+        >
+          <img src={github} alt="GitHub" className="w-1/2 h-1/2 object-contain" />
+        </a>
+      )}
       <p className="text-secondary text-[12px] mt-2">
         © {new Date().getFullYear()} Mingrun Sun
       </p>
